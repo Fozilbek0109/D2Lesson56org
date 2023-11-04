@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="olchovTurlari" >
+        <item>Kg</item>
+        <item>Litr</item>
+        <item>Dona</item>
+        <item>Gramm</item>
+        <item>Qop</item>
+        <item>Pachka</item>
+    </string-array>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SecondActivity"
+    android:orientation="vertical"
+    android:background="@drawable/item_bagroun"
+    android:gravity="center">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardBackgroundColor="@color/purple_200"
+      app:cardCornerRadius="10dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.400">
+    <EditText
+        android:id="@+id/tovarNomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tovar nomi"
+        android:paddingStart="15dp"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="327dp" />
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardBackgroundColor="@color/purple_200"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      app:cardCornerRadius="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView2"
+      app:layout_constraintVertical_bias="0.02">
+    <EditText
+        android:id="@+id/tovarSoni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:paddingStart="15dp"
+        android:hint="Tovar soni"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+  </androidx.cardview.widget.CardView>
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="149dp"
+      android:layout_height="40dp"
+      android:background="@drawable/item_baround_save_button"
+      android:entries="@array/olchovTurlari"
+      app:layout_constraintBottom_toTopOf="@+id/btnSave"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:layout_constraintVertical_bias="0.516" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnSave"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:background="@drawable/item_baround_save_button"
+      android:paddingTop="30dp"
+      android:paddingBottom="30dp"
+      android:text="Saqlash"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
